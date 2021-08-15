@@ -1,4 +1,4 @@
-package LogTips
+package logTips
 
 import (
 	"fmt"
@@ -39,8 +39,8 @@ func LogsTips() {
 		log.Fatalf("Error of trace start. %v.\n", err)
 	}
 
-	defer trace.Stop()
 	AddRandomNumbers()
+	defer trace.Stop()
 
 }
 

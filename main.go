@@ -1,8 +1,9 @@
 package main
 
 import (
-	"goStandardLib/LogTips"
 	"goStandardLib/fmtTips"
+	"goStandardLib/logTips"
+	"goStandardLib/timeTips"
 	//"strconv"
 )
 
@@ -45,7 +46,10 @@ func main() {
 	fmtTips.FmtTips()
 
 	// LOGS
-	LogTips.LogsTips()
+	logTips.LogsTips()
+
+	// TIME
+	timeTips.TimeTips()
 }
 
 func calculateTotal(mealTotal, amount float64) float64 {
