@@ -3,6 +3,8 @@ package main
 import (
 	"goStandardLib/fmtTips"
 	"goStandardLib/logTips"
+	"goStandardLib/reflection"
+	"goStandardLib/stringTips"
 	"goStandardLib/timeTips"
 	//"strconv"
 )
@@ -50,6 +52,13 @@ func main() {
 
 	// TIME
 	timeTips.TimeTips()
+
+	// STRINGS
+	stringTips.StringTips()
+
+	// REFLECTION, CUSTOM TYPES
+	reflection.MovieApp()
+	reflection.ReflectionPackage()
 }
 
 func calculateTotal(mealTotal, amount float64) float64 {
